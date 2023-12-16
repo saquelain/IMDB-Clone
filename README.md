@@ -1,6 +1,6 @@
 # IMDB-Clone
 
-Features of this webapp:-
+#Features of this webapp:-
 Home Page: On this page, Users can search for any movie using the OMDB API. As the user types in the search box, real-time search suggestions are displayed, similar to Google. Each search result will have a "Favourite" button, allowing users to add the movie to their "My Favourite Movies" list. Clicking on a particular search result will open a new page with more information about the selected movie.
 
 Home Page: Through this page, Users can search for any movie using the OMDB API. As the user types in the search box, real-time search suggestions are displayed, similar to Google. Each search result will have a "Favourite" button, allowing users to add the movie to their "My Favourite Movies" list. Clicking on a particular search result will open a new page with more information about the selected movie.
