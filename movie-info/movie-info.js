@@ -15,7 +15,7 @@ async function getMovieDetails(){
     const imdb = savedMovie.imdbID;
 
     try{
-        const moviesResponse = await fetch(`http://www.omdbapi.com/?apikey=f7b7be76&i=${imdb}&plot=full`);
+        const moviesResponse = await fetch(`https://www.omdbapi.com/?apikey=f7b7be76&i=${imdb}&plot=full`);
         const movie = await moviesResponse.json();
         console.log(movie);
 

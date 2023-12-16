@@ -43,7 +43,7 @@ function removePrevMovies(parent){
 
 async function getMovies(title){
     try{
-        const moviesResponse = await fetch(`http://www.omdbapi.com/?apikey=f7b7be76&s=${title}&page=1`);
+        const moviesResponse = await fetch(`https://www.omdbapi.com/?apikey=f7b7be76&s=${title}&page=1`);
         const movies = await moviesResponse.json();
         return movies;
     }catch(err){
