@@ -1,0 +1,40 @@
+.movie-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.poster img {
+    width: 300px;
+    height: auto;
+}
+
+.info {
+    padding: 20px;
+}
+
+.info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.info p {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.favorite-btn{
+    background-color: purple;  
+    height: 50px;
+    width: 90px;
+    margin-left: 100px;
+    border-radius: 10%;
+    cursor: pointer;
+    /* justify-self: flex-end; */
+}

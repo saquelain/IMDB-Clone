@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+
+.headline{
+    font-size: 30px;
+    border-bottom: 1px solid transparent;
+    background-color: aqua;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.top-element{
+    top: 10px;
+    z-index: 99;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-btn{
+    background-color: red;
+    height: 40px;
+    width: 40px;
+    margin-left: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+main{
+    display: grid;
+    width: 1000px;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    grid-template-rows: 400px;
+    grid-auto-rows: 400px;
+    gap: 10px; /* Gap between grid items */
+    padding: 10px;
+    position: absolute;
+    top: 50px;
+}
+
+.poster{
+    height: 350px;
+    width: 240px;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.remove-btn{
+    background-color: red;
+    width: 60px;
+    height: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Snackber start */
+
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #333; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+  }
+  
+  /* Show the snackbar when clicking on a button (class added with JavaScript) */
+  #snackbar.show {
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  /* Animations to fade the snackbar in and out */
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+
+  /* Snackbar end */
